@@ -1,0 +1,245 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Web Dev Toolkit</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <div id="header">
+    	<a href="index.html" id="homeLink">Web Dev Toolkit</a>
+        <table id="headerRight">
+            <tr>
+                <td><a href="about.html" class="rightLink">About</a></td>
+                <td><a href="contact.html" class="rightLink">Contact</a></td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="breadcrumbNav">
+        <span class="breadcrumbLink">
+            <a href="index.html" class="breadcrumbLink">Topics</a> &raquo; 
+            <a href="css.html" class="breadcrumbLink">CSS</a> &raquo;
+            <a href="#" class="breadcrumbLink">Positioning</a> &raquo;
+        </span>
+    </div>
+
+    <div id="spacingArea"></div>
+
+    <div id="contentArea">
+
+        <h2>Positioning in CSS</h2>
+        <p>Mastering positioning properties in CSS will help everything in your website fall right into place!</p>
+        <ul><li>The following topics will help you get started with positioning in CSS:</li>
+            <ul>
+                <li><a href="css-positioning.html#boxModel">The Box Model</a></li>
+                <li><a href="css-positioning.html#properties">Positioning Properties</a></li>
+                <li><a href="css-positioning.html#floating">Floating Elements</a></li>
+                <li><a href="css-positioning.html#arfPos">Absolute, Relative and Fixed Positioning</a></li>
+            </ul>
+        </ul>
+
+<!-- Box Model Diagram -->
+<br>
+<div  id="boxModel"></div>
+<hr>
+
+        <h2>The Box Model Diagram</h2>
+        <p>
+            The <a href="http://www.w3schools.com/css/css_boxmodel.asp" target="new">w3schools.com</a> website describes the Box Model
+            as being a way of describing how HTML elements sit on a page.
+        </p>
+
+        <div id="bmMargin">
+            <p>Margin</p>
+
+            <div id="bmBorder">
+                <p>Border</p>
+
+                <div id="bmPadding">
+                    <p>Padding</p>
+
+                    <div id="bmContent">
+                        <p>Content</p>
+                    </div>
+
+                    <br><br>
+
+                </div>
+
+                <br><br>
+
+            </div>
+
+            <br><br>
+
+        </div>
+
+        <ul>
+            <li>Most elements sit on a webpage as a block by default, taking up the full width of the page.</li>
+            <li>Content sits in the middle of the block with several layers around it.</li>
+        </ul>
+
+<!-- Positioning Properties -->
+<br>
+<div  id="properties"></div>
+<hr>
+
+        <h2>Positioning Properties</h2>
+        <ul><li><p><b>Display Properties</b> affect how HTML elements sit next to each other on the page.</p></li></ul>
+
+<!-- CODE COMING THROUGH -->
+<div class="codeBlock"><pre><xmp>
+    anyElement { 
+        display: block;             /* The element takes up full width of 
+                                        page; nothing sits next to it */
+
+        display: inline-block;      /* The element is a box but other 
+                                        elements can sit next to it on 
+                                        same line */
+
+        display: inline;            /* The element sits on same line as 
+                                        other elements without formatting 
+                                        it like a block */
+
+        display: none;              /* The element and its content 
+                                        disappears from page entirely */
+    }
+
+</xmp></pre></div>
+<!-- END OF CODE -->
+        
+        <br>
+
+        <ul><li><p><b>Spacing Properties</b> affect the margins, border, and padding of elements.</p></li></ul>
+
+<!-- CODE COMING THROUGH -->
+<div class="codeBlock"><pre><xmp>
+    anyElement { 
+        margin: 20px;                   /* Keeps 20 pixels between element's 
+                                            borders and other elements */
+
+        margin: 10px, 15px, 20px, 25px; /* Specify each side's margin in
+                                            clockwise order: top, right,
+                                            bottom, left */
+
+        margin-left: 20%;               /* Keeps left side of the element's
+                                            margin 20% of the page's width 
+                                            away from nearest thing on left */
+    }
+
+</xmp></pre></div>
+<!-- END OF CODE -->
+    
+    <ul>
+        <ul>
+            <li>An element's <i>margin</i> property affects the distance between the element's border and other elements.</li>
+            <li>There are multiple ways of selecting certain sides of the element and specifying distances, as seen in the above examples.</li>
+        </ul>
+    </ul>
+
+<!-- CODE COMING THROUGH -->
+<div class="codeBlock"><pre><xmp>
+    anyElement { 
+        padding: 5px;                   /* Keeps 5 pixels between element's 
+                                            content and its border */
+    }
+
+</xmp></pre></div>
+<!-- END OF CODE -->
+    
+    <ul>
+        <ul>
+            <li>An element's <i>padding</i> property is similar to the margin property, but affects the space between an element's border and its content.</li>
+        </ul>
+    </ul>
+
+<!-- CODE COMING THROUGH -->
+<div class="codeBlock"><pre><xmp>
+    anyElement { 
+        border: 
+            2px                     /* Width of border; set to 0 for no border */
+            solid                   /* Style of line, e.g. solid, dashed */
+            black;                  /* Color of line; use words or hex codes */
+
+        border: 2px solid black;    /* More common way of formatting 
+                                        the border property */
+    }
+
+</xmp></pre></div>
+<!-- END OF CODE -->
+    
+    <ul>
+        <ul>
+            <li>An element's <i>border</i> property affects the style of the line surrounding an element.</li>
+        </ul>
+    </ul>
+
+
+<!-- Floating Elements -->
+<br>
+<div  id="floating"></div>
+<hr>
+
+        <h2>Floating Elements</h2>
+        <ul><li><p>The <i>float</i> property facilitates the placement of multiple elements in particular locations on the page.</p></li></ul>
+
+<div class="codeBlock"><pre><xmp>
+    anyElement { 
+        float: right;               /* Makes the element sit to the right */
+        float: left;                /* Makes the element sit to the left */
+    }
+
+</xmp></pre></div>
+<!-- END OF CODE -->
+
+    <ul><li><p>The <i>clear</i> property moves an element below others if they would otherwise be on the same line.</p></li></ul>
+
+<div class="codeBlock"><pre><xmp>
+    anyElement { 
+        clear: right;               /* Makes the element clear elements 
+                                        on the right */
+
+        clear: left;                /* Makes the element clear elements 
+                                        on the left */
+
+        clear: both;                /* Makes the element clear elements 
+                                        on both sides */
+    }
+
+</xmp></pre></div>
+<!-- END OF CODE -->
+
+<!-- Absolute, Relative and Fixed Positioning -->
+<br>
+<div  id="arfPos"></div>
+<hr>
+
+        <h2>Absolute, Relative and Fixed Positioning</h2>
+        <ul><li><p>The <i>position</i> property can position an element relative to another, or fixed in the browser window.</p></li></ul>
+
+<div class="codeBlock"><pre><xmp>
+    anyElement { 
+        position: static;           /* Default position */
+
+        position: absolute;         /* Positioned relative to first 
+                                        non-absolute parent */
+
+        position: relative;         /* Position relative to where the 
+                                        element would sit by default (static) */
+
+        position: fixed;           /* Positions the element in a fixed
+                                        area of the browser window */
+    }
+
+</xmp></pre></div>
+<!-- END OF CODE -->
+
+    <div id="footer">
+        <span id="footerText">A Raft of Penguins WebDev</span> 
+    </div>
+</body>
+
+</html>

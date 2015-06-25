@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Web Dev Toolkit</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <div id="header">
+    	<a href="index.html" id="homeLink">Web Dev Toolkit</a>
+        <table id="headerRight">
+            <tr>
+                <td><a href="about.html" class="rightLink">About</a></td>
+                <td><a href="contact.html" class="rightLink">Contact</a></td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="breadcrumbNav">
+        <span class="breadcrumbLink">
+            <a href="index.html" class="breadcrumbLink">Topics</a> &raquo; 
+            <a href="css.html" class="breadcrumbLink">CSS</a> &raquo;
+            <a href="#" class="breadcrumbLink">Selectors</a> &raquo;
+        </span>
+    </div>
+
+    <div id="spacingArea"></div>
+
+    <div id="contentArea">
+
+        <h2>What Are Selectors?</h2>
+        <p>Selectors allow you to target and style specific elements on a webpage.</p>
+        <ul><li>Types of Selectors:</li>
+            <ul>
+                <li><a href="css-selectors.html#htmlSelectors">HTML Selectors</a></li>
+                <li><a href="css-selectors.html#classSelectors">ID and Class Selectors</a></li>
+                <li><a href="css-selectors.html#pseudoSelectors">Pseudo-Class Selectors</a></li>
+            </ul>
+        </ul>
+
+<!-- HTML Selectors -->
+<br>
+<div  id="htmlSelectors"></div>
+<hr>
+
+        <h2>HTML Selectors</h2>
+        <p>HTML Selectors allow CSS to apply styling to specific HTML elements.</p>
+        <ul>
+            <li>All <a href="html-elements.html">HTML elements</a> are Selectors.</li>
+            <li>E.g., the following code selects a page's paragraphs:</li>
+        </ul>
+            
+<!-- CODE COMING THROUGH -->
+<div class="codeBlock"><pre><xmp>
+    p {
+        
+    }
+
+</xmp></pre></div>
+<!-- END OF CODE -->
+
+<!-- ID and Class Selectors Selectors -->
+<br>
+<div  id="classSelectors"></div>
+<hr>
+
+        <h2>ID and Class Selectors</h2>
+        <p>ID and Class selectors allow an extra degree of specificity when choosing which elements to style.</p>
+        <ul>
+            <li>IDs can be used to style one specific element by putting a # in front of the ID.</li>
+            <li>E.g., to style an introductory paragraph with the ID "introPara", we could use the following selector:</li>
+        </ul>
+            
+<!-- CODE COMING THROUGH --> 
+<div class="codeBlock"><pre><xmp>
+    #introPara {
+        
+    }
+
+</xmp></pre></div>
+<!-- END OF CODE -->
+
+        <ul>
+            <li>Classes can be used to style several similar elements by putting a . in front of the Class name.</li>
+            <li>E.g., to style body paragraph with the class "bodyPara", we could use the following selector:</li>
+        </ul>
+
+<!-- CODE COMING THROUGH --> 
+<div class="codeBlock"><pre><xmp>
+    .bodyPara {
+        
+    }
+
+</xmp></pre></div>
+<!-- END OF CODE -->
+
+        <ul>
+            <li>Putting it all together, we will need to specify which paragraphs get what styling type in the HTML file.</li>
+            <li>Here is an example of applying the introductory and body paragraph stylings:</li>
+        </ul>
+
+<!-- CODE COMING THROUGH --> 
+<div class="codeBlock"><pre><xmp>
+    <p id="introPara">This is an intro paragraph.</p>
+    <p class="bodyPara">This is a body paragraph.</p>
+    <p class="bodyPara">This is another body paragraph.</p>
+
+</xmp></pre></div>
+<!-- END OF CODE -->
+
+<!-- Pseudo-Class Selectors -->
+<br>
+<div  id="pseudoSelectors"></div>
+<hr>
+
+<h2>Pseudo-Class Selectors</h2>
+        <p>Pseudo-Class Selectors are used for changing different aspects of an element at different times, such as when it is clicked.</p>
+        <ul>
+            <li>Use a colon and pseudo-class selector to begin styling various states of an element.</li>
+            <li>E.g., the following code selects a page's links when the mouse hovers over them:</li>
+        </ul>
+            
+<!-- CODE COMING THROUGH -->
+<div class="codeBlock"><pre><xmp>
+    a:hover {
+        
+    }
+
+</xmp></pre></div>
+<!-- END OF CODE -->
+
+        <ul>
+            <li>More examples of when styling is applied:</li>
+        </ul>
+            
+<!-- CODE COMING THROUGH -->
+<div class="codeBlock"><pre><xmp>
+    element:hover { }           /* Mouse hovers over element */
+    a:link { }                  /* Unvisited link */
+    a:visited { }               /* Visited link */
+    element:first-child {}      /* First element only */
+    element:nth-child(#) {}     /* Nth element only (insert #) */
+
+</xmp></pre></div>
+<!-- END OF CODE -->
+
+
+    </div>
+
+    <div id="footer">
+        <span id="footerText">A Raft of Penguins WebDev</span> 
+    </div>
+</body>
+
+</html>

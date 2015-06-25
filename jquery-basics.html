@@ -1,0 +1,326 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Web Dev Toolkit</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <div id="header">
+    	<a href="index.html" id="homeLink">Web Dev Toolkit</a>
+        <table id="headerRight">
+            <tr>
+                <td><a href="about.html" class="rightLink">About</a></td>
+                <td><a href="contact.html" class="rightLink">Contact</a></td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="breadcrumbNav">
+        <span class="breadcrumbLink">
+            <a href="index.html" class="breadcrumbLink">Topics</a> &raquo; 
+            <a href="jquery.html" class="breadcrumbLink">jQuery</a> &raquo;
+            <a href="#" class="breadcrumbLink">Basics</a> &raquo;</span>
+        </span>
+    </div>
+
+<div id="spacingArea"></div>
+
+<div id="contentArea">
+
+    <h2>Basics of jQuery</h2>
+        <p>Get a head start on making more interactive websites with this information:</p>
+            <ul>
+                <li><a href="jquery-basics.html#gettingStarted">Getting Started</a></li>
+                <li><a href="jquery-basics.html#elements">Creating, Moving and Removing HTML Elements with jQuery</a></li>
+                <li><a href="jquery-basics.html#classes">Modifying Classes and Content with jQuery</a></li>
+                <li><a href="jquery-basics.html#">More coming soon!</a></li>
+            </ul>
+
+<!-- Getting Started -->
+<br>
+<div id="gettingStarted"></div>
+<hr>
+    	<h2>Getting Started with jQuery</h2>
+        <ul>
+            <li>After linking your .js file to your HTML document as detailed <a href="html-basics.html#theHead">here</a>, you will also need to include the following link to the jQuery library in the Head of your HTML document:</li>
+        </ul>
+
+<!-- CODE COMING THROUGH -->
+<div class="codeBlock"><pre><xmp>
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js">
+    </script>
+
+</xmp></pre></div>
+<!-- END OF CODE -->
+
+        <ul>
+            <ul><li><b>INCLUDE THIS LINK ABOVE THE LINK TO THE EXTERNAL .js FILE!!!</b></li></ul>
+        </ul>
+
+        <ul>
+            <li>In your .js file, you typically create a jQuery function using the following syntax:</li>
+        </ul>
+
+<!-- CODE COMING THROUGH -->
+<div class="codeBlock"><pre><xmp>
+    $(document).ready(function() {
+
+    });
+
+</xmp></pre></div>
+<!-- END OF CODE -->
+
+        <ul>
+            <li>Within this jQuery function, you can create events that interact with HTML elements like so:</li>
+        </ul>
+
+<!-- CODE COMING THROUGH -->
+<div class="codeBlock"><pre><xmp>
+    $(document).ready(function() {
+        $("#htmlElement").anyAction(arg);
+        $("#htmlElementA, #htmlElementB").anotherAction();
+    });
+
+</xmp></pre></div>
+<!-- END OF CODE -->
+
+        <ul>
+            <ul>
+            <li>Where you see "#htmlElement", you can target any HTML element as you would with a <a href="css-selectors.html">CSS selector</a>.</li>
+            <ul><li>You can also include any number of elements by separating them with commas (i.e. use a "compound selector").</li></ul>
+            <li>You can replace "anyAction(arg)" with one of jQuery's many <a href="#">events</a> or <a href="#">event handlers</a>.</li>
+            </ul>
+        </ul>
+
+
+        <ul>
+            <li>Create variables that contain numbers, strings, or even HTML elements that are now jQuery objects:</li>
+        </ul>
+
+<!-- CODE COMING THROUGH -->
+<div class="codeBlock"><pre><xmp>
+    var $varNum = 5;
+    var $varString = "Words and stuff";
+    var $varElement = $("htmlElement");
+
+</xmp></pre></div>
+<!-- END OF CODE -->
+
+        <ul>
+            <li>Use the "this" keyword to limit actions to only affecting the element with which you interacted:</li>
+        </ul>
+
+<!-- CODE COMING THROUGH -->
+<div class="codeBlock"><pre><xmp>
+    $(document).ready(function() {
+        $('div').click(function() {
+            $(this).fadeOut('slow');
+        });
+    });
+
+</xmp></pre></div>
+<!-- END OF CODE -->
+        <ul>
+            <ul>
+            <li>While the above "click" function will potentially affect any clicked div, it only fades out the actual div that was clicked.</li>
+            </ul>
+        </ul>
+
+<br>
+<div id="elements"></div>
+<hr>
+
+    <h2>Creating, Moving and Removing HTML Elements with jQuery</h2>
+
+        <ul>
+            <li>Use the "append" and "prepend" functions to create new child HTML elements within a parent element:</li>
+        </ul>
+
+<!-- CODE COMING THROUGH -->
+<div class="codeBlock"><pre><xmp>
+    $(document).ready(function(){
+        $("body").append("<p>I'm a paragraph!</p>"); 
+    });
+
+</xmp></pre></div>
+<!-- END OF CODE -->
+        <ul>
+            <ul>
+            <li>Creates a paragraph as the last child element of the body; using "prepend" would make it the first child.</li>
+            <li>Can also use "appendTo" and "prependTo", which simply reverse the target and addition places.</li>
+            </ul>
+        </ul>
+
+        <ul>
+            <li>Use the "before" and "after" functions to create new HTML elements before or after another element:</li>
+        </ul>
+
+<!-- CODE COMING THROUGH -->
+<div class="codeBlock"><pre><xmp>
+    $(document).ready(function() {
+        $("#htmlElement").after("<p>Penguin paragraph!</p>")
+    });
+
+</xmp></pre></div>
+<!-- END OF CODE -->
+
+        <ul>
+            <ul>
+            <li>Creates a paragraph after the target element.</li>
+            </ul>
+        </ul>
+
+        <ul>
+            <li>Use the same functions as above with existing elements rather than creating new ones in order to rearrange elements:</li>
+        </ul>
+
+<!-- CODE COMING THROUGH -->
+<div class="codeBlock"><pre><xmp>
+    $(document).ready(function() {
+        $("#one").after("<p>Penguin Paragraph!</p>");
+        var $penguinPara = $("p");
+        $("#two").after($penguinPara);
+    });
+
+</xmp></pre></div>
+<!-- END OF CODE -->
+
+        <ul>
+            <ul>
+            <li>Use of a variable such as the $penguinPara shown above facilitates moving a single element rather than creating a copy.</li>
+            </ul>
+        </ul>
+
+        <ul>
+            <li>The "empty" and "remove" functions help to delete HTML elements:</li>
+        </ul>
+
+<!-- CODE COMING THROUGH -->
+<div class="codeBlock"><pre><xmp>
+    $(document).ready(function() {
+        $("#one").after("<p>Penguin Paragraph!</p>");
+        var $penguinPara = $("p");
+        $("#two").after($penguinPara);
+        $penguinPara.remove();
+    });
+
+</xmp></pre></div>
+<!-- END OF CODE -->
+
+        <ul>
+            <ul>
+            <li>"Remove" will remove the element entirely</li> 
+            <li>"Empty" will empty the contents of the element and all its descendants.</li>
+            </ul>
+        </ul>
+
+<br>
+<div id="classes"></div>
+<hr>
+
+    <h2>Modifying Classes and Content with jQuery</h2>
+
+        <ul>
+            <li>Use the "addClass", "removeClass" and "toggleClass" functions to add, remove or toggle classes from an element:</li>
+        </ul>
+
+<!-- CODE COMING THROUGH -->
+<div class="codeBlock"><pre><xmp>
+    $(document).ready(function() {
+        $("#targetElement").click(function() {
+            $("#targetElement").addClass("newClass");
+        });
+    });
+
+</xmp></pre></div>
+<!-- END OF CODE -->
+        <ul>
+            <ul>
+            <li>Gives the target element a new class when it is clicked.</li>
+            <li>"removeClass" and "toggleClass" have similar syntax as the above example.</li>
+            </ul>
+        </ul>
+
+        <ul>
+            <li>Use the "height" and "width" functions to change the height and width of an element:</li>
+        </ul>
+
+<!-- CODE COMING THROUGH -->
+<div class="codeBlock"><pre><xmp>
+    $(document).ready(function() {
+        $("div").height("80px");
+        $("div").width("90px");
+    });
+
+</xmp></pre></div>
+<!-- END OF CODE -->
+        <ul>
+            <ul>
+                <li>Gives all divs a height of 80 and a width of 90.</li>
+            </ul>
+        </ul>
+
+        <ul>
+            <li>Use the "css" function to change any property of an element:</li>
+        </ul>
+
+<!-- CODE COMING THROUGH -->
+<div class="codeBlock"><pre><xmp>
+    $(document).ready(function() {
+        $("div").css("height", "80px");
+    });
+
+</xmp></pre></div>
+<!-- END OF CODE -->
+        <ul>
+            <ul>
+                <li>Gives all divs a height of 80, similar to the height function.</li>
+            </ul>
+        </ul>
+
+        <ul>
+            <li>Use the "html" function to change the contents of an element:</li>
+        </ul>
+
+<!-- CODE COMING THROUGH -->
+<div class="codeBlock"><pre><xmp>
+    $(document).ready(function() {
+        $("div").html("Penguins are fun!");
+    });
+
+</xmp></pre></div>
+<!-- END OF CODE -->
+        <ul>
+            <ul>
+                <li>Changes the contents of the first div found to "Penguins are fun!".</li>
+            </ul>
+        </ul>
+
+        <ul>
+            <li>Use the "val" function to change the contents of a form element.</li>
+        </ul>
+
+<!-- CODE COMING THROUGH -->
+<div class="codeBlock"><pre><xmp>
+    $(document).ready(function() {
+        var input = $('input[name=checkListItem]').val();
+    });
+
+</xmp></pre></div>
+<!-- END OF CODE -->
+        <ul>
+            <ul>
+                <li>Stores value of checklist item in variable "input".</li>
+                
+            </ul>
+        </ul>
+
+    <div id="footer">
+        <span id="footerText">A Raft of Penguins WebDev</span> 
+    </div>
+</body>
+
+</html>

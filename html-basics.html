@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Web Dev Toolkit</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <div id="header">
+    	<a href="index.html" id="homeLink">Web Dev Toolkit</a>
+        <table id="headerRight">
+            <tr>
+                <td><a href="about.html" class="rightLink">About</a></td>
+                <td><a href="contact.html" class="rightLink">Contact</a></td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="breadcrumbNav">
+        <span class="breadcrumbLink">
+            <a href="index.html" class="breadcrumbLink">Topics</a> &raquo; 
+            <a href="html.html" class="breadcrumbLink">HTML</a> &raquo;
+            <a href="#" class="breadcrumbLink">Basics</a> &raquo;</span>
+        </span>
+    </div>
+
+<div id="spacingArea"></div>
+
+<div id="contentArea">
+
+    <h2>Basic Tags and Structure of HTML</h2>
+        <p>The following sections indroduce basic topics relevant to the creation of virtually any web page:</p>
+            <ul>
+                <li><a href="html-basics.html#gettingStarted">Getting Started</a></li>
+                <li><a href="html-basics.html#theHead">Head</a></li>
+                <li><a href="html-basics.html#theBody">Body</a></li>
+            </ul>
+
+<!-- Getting Started -->
+<br>
+<div id="gettingStarted"></div>
+<hr>
+    	<h2>Getting Started with HTML</h2>
+        <ul>
+            <li>Beginning to work with HTML is as simple as opening a text editor, typing anything in it, and saving it as a ".html" file.</li>
+            <li>However, if you want to create a website with more than text displayed, you're going to start needing "tags".</li>
+        </ul>
+
+        <ul>
+            <li>The basic format of a tag looks something like this:</li>
+        </ul>
+
+<!-- CODE COMING THROUGH -->
+<div class="codeBlock"><pre><xmp>
+    <tag>
+
+</xmp></pre></div>
+<!-- END OF CODE -->
+
+    <ul>
+        <ul>
+            <li>This tag contains a word enclosed in brackets -- nothing fancy.</li>
+        </ul>
+    </ul>
+
+    <ul>
+        <li>Many tags you will see often come in pairs, which look like this:</li>
+    </ul>
+
+<!-- CODE COMING THROUGH -->
+<div class="codeBlock"><pre><xmp>
+    <tag></tag>
+
+</xmp></pre></div>
+<!-- END OF CODE -->
+
+    <ul>
+        <ul>
+            <li>The pair terminates with another similar tag, but the second tag has a "/" in front of the name.</li>
+            <li>The pair of tag allows you to designate where something begins and where it ends.</li>
+        </ul>
+    </ul>
+
+    <ul>
+        <li>This first tag and following pairs of tags are fundamental to virtually any web page:</li>
+    </ul>
+
+<!-- CODE COMING THROUGH -->
+<div class="codeBlock"><pre><xmp>
+    <!Doctype HTML>
+    <html>
+    
+        <head>
+        
+        </head>
+    
+        <body>
+        
+        </body>
+
+    </html>
+
+</xmp></pre></div>
+<!-- END OF CODE -->
+
+<!-- Head -->
+<br>
+<div id="theHead"></div>
+<hr>
+        <h2>The Head</h2>
+        <ul>
+            <li>The "Head" contains several elements about the website that aren't always seen by viewers.</li>
+            <li>Information about the HTML document, including the title, links to scripts, and other "metadata" appear in the Head.</li>
+        </ul>
+
+        <ul>
+            <li>Giving your web page a title of "Penguin Rafting Adventures" would look like this:</li>
+        </ul>
+
+<!-- CODE COMING THROUGH -->
+<div class="codeBlock"><pre><xmp>
+    <head>
+        <title>Penguin Rafting Adventures</title>
+    </head>
+
+</xmp></pre></div>
+<!-- END OF CODE -->
+
+    <ul>
+        <ul>
+            <li>This makes "Penguin Rafting Adventures" appear on your web browser's tab as the name of your web page when you open it.</li>
+            <li>The title also affects various aspects of how search engines find your web page, along with other metadata.</li>
+        </ul>
+    </ul>
+
+    <ul>
+        <li>It is also useful to link to documents containing scripts in the Head, rather than including lines of code within the HTML document.</li>
+        <li>The types of scripts commonly linked to include JavaScript, CSS, etc.</li>
+    </ul>
+
+    <ul>
+        <li><b>Linking to a CSS document</b> generally looks something like this:</li>
+    </ul>
+
+<!-- CODE COMING THROUGH -->
+<div class="codeBlock"><pre><xmp>
+    <head>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+
+</xmp></pre></div>
+<!-- END OF CODE -->
+
+    <ul>
+        <ul>
+            <li>Provided you have a document called "stylesheet.css" in the same folder as your web page, you will now be able to make changes to your CSS document that affect your website!</li>
+            <li>For more information on CSS, go <a href="css.html">here</a>.</li>
+        </ul>
+    </ul>
+
+    <ul>
+        <li><b>Linking to a JavaScript document</b> generally looks something like this:</li>
+    </ul>
+
+<!-- CODE COMING THROUGH -->
+<div class="codeBlock"><pre><xmp>
+    <head>
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+
+</xmp></pre></div>
+<!-- END OF CODE -->
+
+    <ul>
+        <ul>
+            <li>Provided you have a document called "script.js" in the same folder as your web page, you will now be able to make changes to your JavaScript document that affect your website!</li>
+            <li>For more information on JavaScript, go <a href="js.html">here</a>.</li>
+        </ul>
+    </ul>
+    
+
+<!-- Body -->
+<br>
+<div id="theBody"></div>
+<hr>
+    <h2>The Body</h2>
+        <ul>
+            <li>Now we can start creating elements that viewers can actually see!</li>
+            <li>The "Body" of an HTML document contains the structure for a website, such as the content you're reading now.</li>
+            <li>Text is sufficient for a simple website, but HTML allows us to create much more dynamic websites with which users can interact.</li>
+        </ul>
+
+        <ul>
+            <li>To create a hyperlink, which takes the viewer to another page or website altogether once clicked, use this tag:</li>
+        </ul>
+
+<!-- CODE COMING THROUGH -->
+<div class="codeBlock"><pre><xmp>
+    <body>
+        <a href="http://www.google.com">This is a hyperlink to Google!</a>
+    </body>
+
+</xmp></pre></div>
+<!-- END OF CODE -->
+
+    <ul>
+        <ul>
+            <li>The "a" tag begins a link, while the "href" property tells the browser where to go once the link is clicked.</li>
+            <li>The text between the "a" tags is what the viewer actually sees and clicks on in order to use the link.</li>
+            <li>The link doesn't have to be associated with text, though. It can be an image, a certain area of the website, or essentially any element!</li>
+        </ul>
+    </ul>
+
+    <ul>
+        <li>This lists but a few of the basic elements found in the body, but for a more comprehensive list, go <a href="html-elements.html">here</a>!</li>
+    </ul>
+
+
+    <div id="footer">
+        <span id="footerText">A Raft of Penguins WebDev</span> 
+    </div>
+</body>
+
+</html>

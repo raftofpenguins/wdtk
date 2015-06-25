@@ -1,0 +1,244 @@
+#homeLink {
+	font-family: Courier;
+	font-size: 30px;
+	text-decoration: none;
+	color: #C1FFF2;
+	float: left;
+}
+
+#headerRight {
+	float: right;
+	margin-right: 30px;
+	height: 35px;
+	width: 200px;
+	text-align: center;
+}
+
+.rightLink {
+	font-size: 15px;
+	text-decoration: none;
+	color: #9DCFC4;
+	font-family: verdana;
+}
+
+/*
+.inlineLink {
+	color: #625D6A;
+}
+*/
+
+#header {
+	/*border: solid black 1px;*/
+	background: #7C7287;
+	width: 101%;
+	height: 35px;
+
+	top: 0;
+	left: 0;
+	
+	/*
+	margin-left: -10px;
+	margin-top: -10px;
+	margin-bottom: 20px;
+	*/
+
+	padding-left: 10px;
+	position: fixed;
+	z-index: 1;
+}
+
+#breadcrumbNav {
+	left: 0;
+	margin-top: 25px;
+	padding-left: 20px;
+	width: 101%;
+	font-family: verdana;
+
+	position: fixed;
+	z-index: 1;
+	
+	background: #FFFFFF;
+}
+
+.breadcrumbLink {
+	color: #625D6A;
+}
+
+#spacingArea {
+	height: 60px;
+	
+	/* ---------------------------------------------------------------------------------
+		Disgusting filler code that technically works but should be replaced eventually
+		-------------------------------------------------------------------------------- */
+}
+
+#contentArea {
+	top: 100;
+	margin-bottom: 50px;
+
+	/*
+	border: solid black 1px;
+	height: 900px;
+	*/
+}
+
+.sectionLink {
+	text-decoration: none;
+	color: #625D6A;
+	font-family: Arial;
+	font-size: 25px;
+	font-weight: bold;
+	border: solid #625D6A 2px;
+	border-radius: 5px;
+	padding: 2px;
+}
+
+.sectionLink:hover {
+	text-decoration: none;
+	color: #000000;
+	font-family: Arial;
+	font-size: 25px;
+	border: solid #000000 2px;
+	border-radius: 5px;
+}
+
+p {
+	/*color: red;*/
+	font-family: verdana;
+}
+
+ul li {
+	font-family: verdana;
+	font-weight: normal;
+}
+
+ul li a:hover {
+	text-decoration: underline;
+}
+
+
+.listHeader {
+	font-weight: bold;
+}
+
+h1 {
+	font-family: courier;
+}
+
+a {
+	text-decoration: none;
+	color: #625D6A;
+}
+
+a:hover {
+	color: #000000;
+}
+
+hr {
+	border-style: dashed;
+	color: #C7C4DF;
+	margin-bottom: 30px;
+	margin-top: 20px;
+}
+
+.description {
+	font-style: italic;
+}
+
+#footer {
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background: #C7C4DF;
+	height: 30px;
+	text-align: center;
+	font-style: italic;
+	font-family: verdana;
+	font-size: 12px;
+	display: inline-block;
+}
+
+#footerText { 
+	display: inline-block;
+	vertical-align: bottom;
+	margin-top: 7px;
+}
+
+.codeBlock {
+	margin-top: 10px;
+	margin-left: 40px;
+	background-color: #E1F4CB;
+	width: 650px;
+	border-radius: 1px;
+	border-left: 5px solid #3f7cac;
+
+	/* If anyone knows a better way to handle code blocks, please let us know! raftofpenguins@gmail.com */
+}
+
+.penguinBG {
+	margin-top: 10px;
+	margin-left: 40px;
+	margin-bottom: -20px;
+	width: 150px;
+	/*
+	border-radius: 1px;
+	border: 2px solid black;
+	border-bottom: 50px solid blue;
+	padding-bottom: -50px;
+	*/
+}
+
+.penguinLine {
+	border-top: 1px dashed skyblue;
+	border-bottom: 1px dashed skyblue;
+	width: 200px;
+	margin-bottom: 50px;
+	margin: auto;
+}
+
+.penguinLine2 {
+	border-top: 1px dashed skyblue;
+	border-bottom: 1px dashed skyblue;
+	width: 300px;
+	margin-bottom: 50px;
+	margin: auto;
+}
+
+/* Stuff for Box Model Diagram */
+
+#bmMargin {
+	border: 1px dashed blue;
+	margin-left: 50px;
+	width: 50%;
+	padding: 10;
+	text-align: center;
+	font-weight: bold;
+}
+
+#bmBorder {
+	border: 1px solid black;
+	margin: auto;
+	width: 80%;
+	padding: 10;
+	text-align: center;
+	background-color: skyblue;
+}
+
+#bmPadding {
+	border: 1px dashed blue;
+	margin: auto;
+	padding: 10;
+	width: 80%;
+	text-align: center;
+	background-color: #FFFFFF;
+}
+
+#bmContent {
+	border: 1px solid black;
+	margin: auto;
+	padding: 10;
+	text-align: center;
+	width: 80%;
+	background-color: #FFFFFF;
+}
