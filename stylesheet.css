@@ -181,7 +181,8 @@ hr {
 	margin-top: 10px;
 	margin-left: 40px;
 	margin-bottom: -20px;
-	width: 150px;
+	width: 280px;
+	font-size: 150%;
 	/*
 	border-radius: 1px;
 	border: 2px solid black;
@@ -193,7 +194,7 @@ hr {
 .penguinLine {
 	border-top: 1px dashed skyblue;
 	border-bottom: 1px dashed skyblue;
-	width: 200px;
+	width: 280px;
 	margin-bottom: 50px;
 	margin: auto;
 }
