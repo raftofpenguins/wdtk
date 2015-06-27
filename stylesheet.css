@@ -1,6 +1,6 @@
 #homeLink {
 	font-family: Courier;
-	font-size: 30px;
+	font-size: 200%;
 	text-decoration: none;
 	color: #C1FFF2;
 	float: left;
@@ -15,7 +15,7 @@
 }
 
 .rightLink {
-	font-size: 15px;
+	font-size: 100%;
 	text-decoration: none;
 	color: #9DCFC4;
 	font-family: verdana;
@@ -53,6 +53,7 @@
 	padding-left: 20px;
 	width: 101%;
 	font-family: verdana;
+	font-size: 100%;
 
 	position: fixed;
 	z-index: 1;
@@ -155,7 +156,7 @@ hr {
 	text-align: center;
 	font-style: italic;
 	font-family: verdana;
-	font-size: 12px;
+	font-size: 80%;
 	display: inline-block;
 }
 
