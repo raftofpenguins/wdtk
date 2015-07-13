@@ -40,6 +40,31 @@
 		color: #9DCFC4;
 		font-family: verdana;
 	}
+
+	@media screen and (max-width: 520px) {
+		#headerRight {
+			float: right;
+			margin-right: 1em;
+			height: 2.25em;
+			width: auto;
+			text-align: center;
+		}
+
+		.rightLink {
+			font-size: 75%;
+			text-decoration: none;
+			color: #9DCFC4;
+			font-family: verdana;
+		}
+
+		#aboutLink {
+			border-right: 1px solid #9DCFC4;
+			padding-right: 0.5em;
+		}
+	}
+
+	
+
 	#breadcrumbNav {
 		left: 0;
 		margin-top: 25px;
@@ -76,68 +101,79 @@
 	*/
 }
 
-.sectionLink {
-	text-decoration: none;
-	color: #625D6A;
-	font-family: Arial;
-	font-size: 25px;
-	font-weight: bold;
-	border: solid #625D6A 2px;
-	border-radius: 5px;
-	padding: 2px;
-}
+	.sectionLink {
+		text-decoration: none;
+		color: #625D6A;
+		font-family: Arial;
+		font-size: 25px;
+		font-weight: bold;
+		border: solid #625D6A 2px;
+		border-radius: 5px;
+		padding: 2px;
+	}
 
-.sectionLink:hover {
-	text-decoration: none;
-	color: #000000;
-	font-family: Arial;
-	font-size: 25px;
-	border: solid #000000 2px;
-	border-radius: 5px;
-}
+	.sectionLink:hover {
+		text-decoration: none;
+		color: #000000;
+		font-family: Arial;
+		font-size: 25px;
+		border: solid #000000 2px;
+		border-radius: 5px;
+	}
 
-p {
-	/*color: red;*/
-	font-family: verdana;
-}
+	p {
+		/*color: red;*/
+		font-family: verdana;
+	}
 
-ul li {
-	font-family: verdana;
-	font-weight: normal;
-}
+	ul li {
+		font-family: verdana;
+		font-weight: normal;
+	}
 
-ul li a:hover {
-	text-decoration: underline;
-}
+	ul li a:hover {
+		text-decoration: underline;
+	}
 
 
-.listHeader {
-	font-weight: bold;
-}
+	.listHeader {
+		font-weight: bold;
+	}
 
-h1 {
-	font-family: courier;
-}
+	h1 {
+		font-family: courier;
+	}
 
-a {
-	text-decoration: none;
-	color: #625D6A;
-}
+	a {
+		text-decoration: none;
+		color: #625D6A;
+	}
 
-a:hover {
-	color: #000000;
-}
+	a:hover {
+		color: #000000;
+	}
 
-hr {
-	border-style: dashed;
-	color: #C7C4DF;
-	margin-bottom: 30px;
-	margin-top: 20px;
-}
+	hr {
+		border-style: dashed;
+		color: #C7C4DF;
+		margin-bottom: 30px;
+		margin-top: 20px;
+	}
 
-.description {
-	font-style: italic;
-}
+	.description {
+		font-style: italic;
+	}
+
+	.codeBlock {
+		margin-top: 10px;
+		margin-left: 40px;
+		background-color: #E1F4CB;
+		width: 650px;
+		border-radius: 1px;
+		border-left: 5px solid #3f7cac;
+
+		/* If anyone knows a better way to handle code blocks, please let us know! raftofpenguins@gmail.com */
+	}
 
 #footer {
 	position: fixed;
@@ -153,22 +189,13 @@ hr {
 	display: inline-block;
 }
 
-#footerText { 
-	display: inline-block;
-	vertical-align: bottom;
-	margin-top: 7px;
-}
+	#footerText { 
+		display: inline-block;
+		vertical-align: bottom;
+		margin-top: 7px;
+	}
 
-.codeBlock {
-	margin-top: 10px;
-	margin-left: 40px;
-	background-color: #E1F4CB;
-	width: 650px;
-	border-radius: 1px;
-	border-left: 5px solid #3f7cac;
 
-	/* If anyone knows a better way to handle code blocks, please let us know! raftofpenguins@gmail.com */
-}
 
 .penguinBG {
 	margin-top: 10px;
@@ -184,21 +211,21 @@ hr {
 	*/
 }
 
-.penguinLine {
-	border-top: 1px dashed skyblue;
-	border-bottom: 1px dashed skyblue;
-	width: 280px;
-	margin-bottom: 50px;
-	margin: auto;
-}
+	.penguinLine {
+		border-top: 1px dashed skyblue;
+		border-bottom: 1px dashed skyblue;
+		width: 280px;
+		margin-bottom: 50px;
+		margin: auto;
+	}
 
-.penguinLine2 {
-	border-top: 1px dashed skyblue;
-	border-bottom: 1px dashed skyblue;
-	width: 300px;
-	margin-bottom: 50px;
-	margin: auto;
-}
+	.penguinLine2 {
+		border-top: 1px dashed skyblue;
+		border-bottom: 1px dashed skyblue;
+		width: 300px;
+		margin-bottom: 50px;
+		margin: auto;
+	}
 
 /* Stuff for Box Model Diagram */
 
