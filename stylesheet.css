@@ -171,9 +171,17 @@
 		width: 40em;
 		border-radius: 1px;
 		border-left: 5px solid #3f7cac;
-
+		word-wrap: break-word;
 		/* If anyone knows a better way to handle code blocks, please let us know! raftofpenguins@gmail.com */
 	}
+
+	@media screen and (max-width: 710px) {
+		.codeBlock {
+			width: 85%;
+			margin-right: 1%;
+		}
+	}
+
 
 #footer {
 	position: fixed;
